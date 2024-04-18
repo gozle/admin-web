@@ -5,7 +5,6 @@ import { blogApi } from "@/services/blog";
 import { languageApi } from "@/services/language";
 import { serviceApi } from "@/services/service";
 import { siteApi } from "@/services/site";
-import { userApi } from "@/services/user";
 import { authReducer } from "@/lib/store/features/auth";
 import { feedbackApi } from "@/services/feedback";
 
@@ -17,7 +16,6 @@ export const store = configureStore({
     [languageApi.reducerPath]: languageApi.reducer,
     [serviceApi.reducerPath]: serviceApi.reducer,
     [siteApi.reducerPath]: siteApi.reducer,
-    [userApi.reducerPath]: userApi.reducer,
     auth: authReducer,
   },
   middleware: (getDefaultMiddleware) =>
@@ -27,8 +25,7 @@ export const store = configureStore({
       feedbackApi.middleware,
       languageApi.middleware,
       serviceApi.middleware,
-      siteApi.middleware,
-      userApi.middleware,
+      siteApi.middleware
     ),
 });
 

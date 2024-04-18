@@ -6,7 +6,6 @@ export enum RoutesPaths {
   LANGUAGES = "/languages",
   SITE_CATEGORY = "/site-category/:id",
   SITE_CATEGORIES = "/site-categories",
-  USERS = "/users",
   FEEDBACKS = "/feedbacks",
   BLOG_POSTS = "/blog-posts",
 }

@@ -9,7 +9,6 @@ const LanguagesView = React.lazy(() => import("@/views/languages.view"));
 const ServicesView = React.lazy(() => import("@/views/services.view"));
 const SiteCategoryView = React.lazy(() => import("@/views/site-category.view"));
 const SitesView = React.lazy(() => import("@/views/site-categories.view"));
-const UsersView = React.lazy(() => import("@/views/users.view"));
 const FeedbacksView = React.lazy(() => import("@/views/feedbacks.view"));
 
 const AuthRouter = () => {
@@ -29,7 +28,6 @@ const AuthRouter = () => {
           path={RoutesPaths.SITE_CATEGORY}
           element={<SiteCategoryView />}
         />
-        <Route path={RoutesPaths.USERS} element={<UsersView />} />
         <Route path={RoutesPaths.FEEDBACKS} element={<FeedbacksView />} />
         <Route
           path={RoutesPaths.ALL}
