@@ -1,4 +1,4 @@
-import { baseQueryWithAuth } from "@/lib/modules";
+import { baseQueryWithAuth } from "../base-query";
 import { createApi } from "@reduxjs/toolkit/query/react";
 import { SignInRequest, SignInResponse } from "./auth.type";
 

@@ -1,4 +1,4 @@
-import { baseQueryWithReauth } from "@/lib/modules";
+import { baseQueryWithReauth } from "../base-query";
 import { objectToQueryStringSerializer } from "@/lib/serializers";
 import { createApi } from "@reduxjs/toolkit/query/react";
 import {
